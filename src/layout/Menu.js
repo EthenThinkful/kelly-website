@@ -6,10 +6,12 @@ function Menu() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between border-b border-gray-400 py-8 navigation-container">
+    <div className="flex items-center justify-between border-b border-gray-400 py-8 px-8">
       <a href="/">
-		<div className="resizeImage">
+        {/* resizeImage with flex keeps text to the right of image */}
+		<div className="resizeImage flex items-center">
         <img src="https://user-images.githubusercontent.com/104235709/207202957-591e720e-8396-4d40-a2ac-0a3a174d0c2f.png" alt="logo" />
+        <div className="pl-5 text-lg font-bold text-slate-500">Kelly's refurbishing</div>
 		</div>
 	  </a>
       <nav>
