@@ -3,10 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 } */
-.resizeImage {
-  /* I think px is okay but just for images ? */
-  width: 50px;
-  height: 50px;
+/* .kellys-logo {
+  I think px is okay but just for images ?
+  width: 50%;
+} */
+
+.nav-container {
+  margin: 2rem;
 }
 
 .hideMenuNav {
@@ -30,20 +33,15 @@
 
 /* was going to delete these media queries for now since becuz inline styling */
 
-/* @media (width >= 580px) {
-  .navigation-container {
-    padding: 2rem 6rem;
+@media (300px < width < 580px) {
+  .nav-container {
+    margin: 1rem;
   }
 }
 
-@media (width < 580px) {
-  .navigation-container {
-    padding: 2rem 2rem;
+@media (width <= 300px) {
+  .nav-container {
+    margin: 0.5rem;
   }
+  /* possibly edit hamburger icon sizing here since it is a bit big and will overlap title */
 }
-
-@media (width <= 280px) {
-  .navigation-container {
-    padding: 2rem 2rem;
-  }
-} */
