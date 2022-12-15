@@ -6,7 +6,7 @@ import "./Layout.css"
 function Layout() {
 	return (
 		<div>
-		<div className="navigation">
+		<div className="container mx-auto mb-8 px-8">
 			<Menu />
 		</div>
 		<div className="routes">
