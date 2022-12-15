@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Kellyslogo from "../Assets/logo/Kellys_logo.png"
 
 function Menu() {
 	const [isNavOpen, setIsNavOpen] = useState(false);
@@ -6,7 +7,7 @@ function Menu() {
 		
 		<div className="flex items-center justify-between border-b border-gray-400 py-8">
       <a href="/">
-        <img src="https://designbygio.it/images/logo.png" alt="logo" />
+        <img src={Kellyslogo} alt="logo" className="w-12 rounded-md"/>
       </a>
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
@@ -39,10 +40,10 @@ function Menu() {
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/about">About</a>
+                <a href="/services">Services</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/portfolio">Portfolio</a>
+                <a href="/gallery">Gallery</a>
               </li>
               <li className="border-b border-gray-400 my-8 uppercase">
                 <a href="/contact">Contact</a>
@@ -53,10 +54,10 @@ function Menu() {
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
           <li>
-            <a href="/about">About</a>
+            <a href="/services">Services</a>
           </li>
           <li>
-            <a href="/portfolio">Portfolio</a>
+            <a href="/gallery">Gallery</a>
           </li>
           <li>
             <a href="/contact">Contact</a>
