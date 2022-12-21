@@ -1,14 +1,16 @@
 import React from "react";
-import {Router, Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Carousel from "./Carousel";
 //import NotFound from "./NotFound"
 
-
 function ProjectRoutes() {
-	<Router>
-		<Route exact={true} path="/">
-			{/* Component here */}
-		</Route>
-	</Router>
+  return (
+    <div className="container mx-auto mb-8 px-8">
+      <Routes>
+        <Route path="/" element={<Carousel />}></Route>
+      </Routes>
+    </div>
+  );
 }
 
 export default ProjectRoutes;
