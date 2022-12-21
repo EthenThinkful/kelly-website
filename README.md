@@ -5,7 +5,7 @@ Creating a website for a local business
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Install these!
--Tailwind CSS
+-Tailwind CSS\
 -Swiper.js
 
 ## Available Scripts
