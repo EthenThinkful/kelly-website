@@ -1,7 +1,7 @@
 import React from "react";
 import Menu from "./Menu";
 import Carousel from "./Carousel";
-import Routes from "./Routes";
+import ProjectRoutes from "./ProjectRoutes";
 import "./Layout.css"
 
 function Layout() {
@@ -12,7 +12,7 @@ function Layout() {
 			<Carousel />
 		</div>
 		<div className="routes">
-			<Routes />
+			<ProjectRoutes />
 		</div>
 		</div>
 	)	

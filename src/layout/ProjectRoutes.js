@@ -3,7 +3,7 @@ import {Router, Route} from "react-router-dom";
 //import NotFound from "./NotFound"
 
 
-function Routes() {
+function ProjectRoutes() {
 	<Router>
 		<Route exact={true} path="/">
 			{/* Component here */}
@@ -11,4 +11,4 @@ function Routes() {
 	</Router>
 }
 
-export default Routes
+export default ProjectRoutes;
