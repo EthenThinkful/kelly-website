@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Kellyslogo from "../Assets/logo/Kellys_logo.png"
 
-function Menu() {
+function NavBar() {
 	const [isNavOpen, setIsNavOpen] = useState(false);
 	return (
 		
@@ -89,4 +89,4 @@ function Menu() {
 }
 
 
-export default Menu;
+export default NavBar;
