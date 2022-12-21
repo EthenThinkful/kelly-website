@@ -1,14 +1,17 @@
 import { useState } from "react";
-import Kellyslogo from "../Assets/logo/Kellys_logo.png"
+import Kellyslogo from "../Assets/logo/Kellys_logo.png";
 
 function NavBar() {
-	const [isNavOpen, setIsNavOpen] = useState(false);
-	return (
-		
-		<div className="flex items-center justify-between border-b border-gray-400 py-8">
-      <a href="/">
-        <img src={Kellyslogo} alt="logo" className="w-12 rounded-md"/>
-      </a>
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  return (
+    <div className="flex items-center justify-between border-b border-gray-400 py-8">
+      <div className="logo-and-title-container flex justify-start align-center gap-5 ">
+        <a href="/">
+          <img src={Kellyslogo} alt="logo" className="flex w-12 rounded-md" />
+        </a>
+        <h1 className="kelly-title-name text-5xl tracking-wider">KELLY</h1>
+      </div>
+
       <nav>
         <section className="MOBILE-MENU flex lg:hidden">
           <div
@@ -82,11 +85,12 @@ function NavBar() {
         justify-content: space-evenly;
         align-items: center;
       }
+      .kelly-title-name {
+        font-family: Proxima Nova, sans-serif;
+      }
     `}</style>
     </div>
-	
-	)
+  );
 }
-
 
 export default NavBar;
