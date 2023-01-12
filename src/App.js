@@ -8,14 +8,14 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="container mx-auto mb-8 px-12">
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 
