@@ -43,6 +43,7 @@ function Carousel() {
       scrollbar={{ draggable: true }}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
+      className="my-12"
     >
       {photoData.map((photo) => (
         <SwiperSlide>
@@ -50,7 +51,7 @@ function Carousel() {
             <img
               src={photo}
               alt="before&afterPhotos"
-              className="w-70 h-70 pt-16 px-12"
+              className="w-70 h-70 py-16 px-12"
             ></img>
           }
         </SwiperSlide>
