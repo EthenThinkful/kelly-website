@@ -57,6 +57,9 @@ function NavBar() {
 
         <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
           <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
             <a href="/services">Services</a>
           </li>
           <li>
